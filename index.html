@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>Index</title>
+  <title>Document translation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style2.css">
   <!-- Font Awesome Link for Icons -->
@@ -43,7 +43,7 @@
   
     <nav class="navbar" id="top">
         <div class="navbar-logo">
-            <img src="./img/logo.jpg" alt="techfort logo">
+            <img src="./img/logo.jpg" alt=" logo">
         </div>
         <ul class="navbar-links">
            
@@ -72,7 +72,7 @@
                 <li><a href="./admin.html" > 
                     <i class="fas fa-user"></i>
                     Admin?     	                
-                    <li><a href="./get-quote.html" >
+                    <li><a href="#contact" >
                         <i class="fas fa-paper-plane"></i> 
                         Contact Us</a>
                     </li> 
@@ -100,32 +100,84 @@
     </nav> 
   
 
-    <main>
-          <!-- About section  -->
-          <section class="about about2" id="about">
-            <img src="./img/about-pic.jpg" class=" from-left" alt=" about">
+    <main><!-- About Section (Hero) -->
+        <section class="about about2" id="about">
+            <div class="content">
+                <h1>Accurate, Fast & Certified Document Translations You Can Trust!</h1>
+                <p>
+                    Your documents tell your story—make sure the world understands them. 
+                    From legal papers to business contracts, we translate them with accuracy & care, ensuring you get the results you need.  
+                    <!-- <strong>100+ languages, fast turnaround, guaranteed precision!</strong> -->
+                </p>
         
-            <div class="content ">
-                <h1>Professional documents translation services 
-                </h1>
-                <div class="sub-content">
-                    <div class="about1">
-                        <p>
-                            Documents - they're a part of all of our lives, no matter where we live or what we do. Whether it's a lease for your home, applications for a job or school, doctor's files, or business contracts, ensuring your documents are understood by the person you need to submit them to is crucial. <br> <br> Our expert document translators can be trusted to take any document in any language and translate it quickly and accurately.
+                <!-- Key Benefits -->
+                <ul class="benefits-list">
+                    <li>🌎 <strong>Translate from 100+ Languages</strong> 
+                        <!-- <p>⚡ <strong>Fast Turnaround</strong> </l> -->
+                    </li>
+                    <li>⚡ <strong>Fast Turnaround</strong> </li>
+                    <li>🔒 <strong>Certified & Secure</strong>
+                    
+                        <!-- <p>🏆 <strong>Rated #1</strong> by Businesses & Individuals</p> -->
+                    </li>
+                    <li>🏆 <strong>Rated #1</strong> by Businesses & Individuals</li>
+                </ul>
+        
+                <!-- Call to Action -->
+                 <div class="trusted-btn">
 
-                        </p>
+                     <p class="trust-badge" style="margin-top: 1.4rem; margin-right: 1rem;">⭐ Trusted by <strong>10,000+ Clients</strong> Worldwide</p>
+                     <a href="./get-quote.html">
+                         <button class="navbar-button success">
+                             <i class="fas fa-comment-dollar"></i> Get Quote
+                            </button>
+                        </a>
                     </div>
-                 
-                </div>
-                <a href="./get-quote.html">
+        
+                <!-- Trust Badge -->
+            </div>
+        
+            <!-- Image/Video -->
+            <img src="./img/about1.png" alt="Professional Translation Services">
+        </section>
+        
 
-                    <button class="navbar-button success">
-                        <i class="fas fa-comment-dollar"></i> 
-                        Get Quote</button> 
-                </a>
+        <section class="translaters">
+    
+            <div class="text-content">
+                <h2>Professional online translation services.</h2>
+                <br><br>
+                <h3>Quick, simple and affordable.</h3>
+                <br><br>
+                <p>
+                    Experience seamless and cost-effective translation solutions with our user-friendly online platform and global network of expert translators. 
+                    We deliver high-quality translations quickly and efficiently, saving your time and resources.
+                </p>
+            </div>
+        
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <h3>Expert Translators with industry knowledge</h3>
+                        <div class="feature-icon">
+                            <img src="./img/expert1.png" alt="Native Translators">
+                        </div>
+                    </div>
+                    <p>
+                        Our network of industry-specialized translators ensures your project is handled by an expert with in-depth knowledge of your domain            </p>
+                </div>
+        
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <h3>Hassle-free</h3>
+                        <div class="feature-icon">
+                            <img src="./img/expert2.png" alt="Hassle Free">
+                        </div>
+                    </div>
+                    <p>We manage every step of your multilingual translation projects, from finding the best translators to quality assurance and delivery – we do it all for you.</p>
+                </div>
             </div>
         </section>
-
         <!-- document translation services  -->
         <section class="document-translation">
             <h2>Why use our document translation services?</h2>
@@ -154,6 +206,7 @@
             </div>
         </section>  
 </main>
+
 <div class="translation-services" id="services">
     <h2>We offer following documents translation services</h2>
     <div class="services-list">
@@ -212,6 +265,8 @@
     </div>
 </section>
 
+
+
 <script>const slider = document.querySelector('.experts-container');
 
     slider.addEventListener('mouseover', () => {
@@ -267,12 +322,14 @@
     function toggleFAQ(element) {
         const answer = element.nextElementSibling;
         element.classList.toggle("active");
+        answer.style.transition = "max-height 1s ease-in-out";
         if (answer.style.display === "block") {
             answer.style.display = "none";
         } else {
             answer.style.display = "block";
         }
     }
+    // Add smoothness to the toggle animation
 </script>
 
 <!-- Contact section  -->
@@ -305,8 +362,29 @@
 </div>
 <div class="row">
       <div></div>  
-      <button type="submit"  class=" send" style="width: 40%;">       <i class="fas fa-paper-plane"></i>
-         Send Message</button>
+      <!-- <button type="submit"  class=" send" style="width: 40%;">       <i class="fas fa-paper-plane"></i>
+         Send Message</button> -->
+         <!-- From Uiverse.io by adamgiebl --> 
+<button class="button">
+    <div class="svg-wrapper-1">
+      <div class="svg-wrapper">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+        >
+          <path fill="none" d="M0 0h24v24H0z"></path>
+          <path
+            fill="currentColor"
+            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+    <span>Send message</span>
+  </button>
+  
     </form> 
       
     </div>
@@ -331,7 +409,46 @@
   </section>
 
 <!-- footer section -->
-  <footer>All &copy; rights reserved</footer>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section ">
+            <h3>About Us</h3>
+            <p>We provide professional document translation services with accuracy and efficiency.</p>
+        </div>
+        
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>Email: info@gmail.com</p>
+            <p>Phone: +9712345678</p>
+            <p>Location: Dubai, UAE</p>
+        </div>
+        
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <img src="./img/logo.jpg" alt="">
+        <p>All &copy; Rights Reserved 2025-2026</p>
+    </div>
+</footer>
 
   <!-- navbar toggle  -->
     <script>

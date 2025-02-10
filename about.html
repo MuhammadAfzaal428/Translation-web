@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+    <!-- header  -->
   <meta charset="utf-8">
-  <title>Index</title>
+  <title>Translation about</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style2.css">
   <!-- Font Awesome Link for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <script src="./script.js" defer></script>
 
-</head>
+
+  <style> 
+    body{
+        overflow-x: hidden;
+    }
+        #about .content, .translators{ 
+            animation: scalling 2s !important;
+            animation-timeline: view();
+            animation-range: entry 0% cover 30% !important; 
+        }
+        @keyframes scalling {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>  
 <body>
   
     <!-- loader code  -->
@@ -25,24 +45,6 @@
         }, 1000);
     </script>
     
-<style> 
-body{
-    overflow-x: hidden;
-}
-    .about .content{ 
-        animation: scalling 2s ;
-        /* animation-timeline: view();
-      animation-range: entry 0% cover 30% ;  */
-    }
-    @keyframes scalling {
-        from {
-            transform: scale(0);
-        }
-        to {
-            transform: scale(1);
-        }
-    }
-</style>
 
    
 <nav class="navbar" id="top">
@@ -62,11 +64,11 @@ body{
                 About</a>
             </li>
         <li>                
-            <a href="#services"> 
+            <a href="./.#services"> 
                 <i class="fas fa-clipboard-list"></i>
                 Services 
             </a></li>                
-            <li><a href="./inquiry-form.html" >
+            <li><a href="./inquiry-form.html" > 
                 <i class="fas fa-search"></i>	                Track inquiry</a>
             </li> 
             <li><a href="#faq" > 
@@ -102,19 +104,20 @@ body{
         <div class="bar"></div>
     </div>
 </nav> 
+
     <main>
         <!-- About section  -->
-        <section class="about about2" id="about">
-              <video src="./img/video2.mp4" autoplay muted loop></video>
+        <section class="about " id="about">
+              <!-- <video src="./img/video2.mp4" autoplay muted loop></video> -->
               
-            <!-- <img src="./img/about1.png" class=" from-left" alt=" about"> -->
             <div class="content ">
                 <h1>Professional documents translation services 
                 </h1>
                 <div class="sub-content">
                     <div class="about1">
                         <p>
-                            Documents are an essential part of our daily lives, regardless of our location or profession. From rental agreements and job applications to medical records and business contracts, it's vital to ensure that your documents are understood by their intended recipients. Our expert document translation services provide fast and accurate translations of any document in any language, giving you peace of mind and guaranteeing that your message is conveyed clearly
+                            Documents are an essential part of our daily lives, regardless of our location or profession. 
+                             Our expert document translation services provide fast and accurate translations of any document in any language, giving you peace of mind and guaranteeing that your message is conveyed clearly
                         </p>
                     </div>
                  
@@ -126,40 +129,91 @@ body{
                         Get Quote</button> 
                 </a>
             </div>
+            <img src="./img/about-pic.png" class=" about-img" alt=" about">
+
         </section>
 
         <!-- document translation services  -->
-        <section class="document-translation">
-            <h2>Why use our document translation services?</h2>
-            <div class="translation-wrapper">
-                <div class="translation-item">
-                    <img src="./img/diploma.png" alt="Professional Expertise">
-                    <h3>Professional Expertise</h3>
+        <section class="translaters">
+    
+            <div class="text-content">
+                <h1>Professional online translation services.</h1>
+                <br><br>
+                <h3>Quick, simple and affordable.</h3>
+                <br><br>
+                <p>
+                    Experience seamless and cost-effective translation solutions with our user-friendly online platform and global network of expert translators. 
+                    We deliver high-quality translations quickly and efficiently, saving your time and resources.
+                </p>
+            </div>
+        
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <h3>Expert Translators with industry knowledge</h3>
+                        <div class="feature-icon">
+                            <img src="./img/expert1.png" alt="Native Translators">
+                        </div>
+                    </div>
                     <p>
-                        Trust our expert document translators to handle all your translation needs, from sensitive legal documents and confidential medical records to every other type of document, ensuring accuracy and precision.
-                         </div>
-                <div class="translation-item">
-                    <img src="./img/easyway.png" alt="Easy Process">
-                    <h3>Easy Process</h3>
-                    <p>
-                        Get started in minutes! Simply upload your documents to our intuitive self-service Wizard, provide a brief for our translators, receive an instant quote, and let us take care of the rest
-                    </p>
+                        Our network of industry-specialized translators ensures your project is handled by an expert with in-depth knowledge of your domain            </p>
                 </div>
-                <div class="translation-item">
-                    <img src="./img/simple.png" alt="Simple Communication">
-                    <h3>Simple Communication</h3>
-                    <p>
-                        Collaborate seamlessly with your dedicated document translator through our online platform. Share feedback, provide additional instructions, and track progress in real-time to ensure your final translation is error-free and meets your expectations
-                    </p>
+        
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <h3>Hassle-free</h3>
+                        <div class="feature-icon">
+                            <img src="./img/expert3.png" alt="Hassle Free">
+                        </div>
+                    </div>
+                    <p>We manage every step of your multilingual translation projects, from finding the best translators to quality assurance and delivery – we do it all for you.</p>
                 </div>
             </div>
-        </section>  
+        </section>
+        
 </main>
 
-
 <!-- footer section -->
-  <footer>All &copy; rights reserved</footer>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section ">
+            <h3>About Us</h3>
+            <p>We provide professional document translation services with accuracy and efficiency.</p>
+        </div>
+        
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="./.#services">Services</a></li>
+                <li><a href="./.#contact">Contact</a></li>
+                <li><a href="./.#faq">FAQ</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>Email: info@gmail.com</p>
+            <p>Phone: +9712345678</p>
+            <p>Location: Dubai, UAE</p>
+        </div>
+        
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
 
+    <div class="footer-bottom">
+        <img src="./img/logo.jpg" alt="">
+        <p>All &copy; Rights Reserved 2025-2026</p>
+    </div>
+</footer>
   <!-- navbar toggle  -->
     <script>
         // Toggle mobile menu visibility

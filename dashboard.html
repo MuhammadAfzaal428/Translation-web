@@ -13,20 +13,29 @@
 
   </head>
   <body>
+    <!-- loader code  -->
+    <div class="loader-container">
+        <img class="loader-svg" src="./img/loader.svg" alt="loader">
+    </div>
+
+    <!-- loader script  -->
+    <script>
+        const loaderContainer = document.querySelector('.loader-container');
+        setTimeout(() => {
+            loaderContainer.style.display = 'none';
+        }, 1000);
+    </script>
+    
 
     <nav class="navbar" id="top">
       <div class="navbar-logo">
           <img src="./img/logo.jpg" alt="techfort logo">
       </div>
       <ul class="navbar-links">
-          <li><a class="active" href="./">
-              <i class="fas fa-home"></i>
-              Home</a>
-          </li>
+         
           <li> 
               <a href="./need_quotation.html"> 
                   <i class="fas fa-user"></i>
-
                   Profile</a>
               </li>
           <li> 
